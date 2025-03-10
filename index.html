@@ -11,13 +11,13 @@
             background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
             text-align: center;
             margin: 0;
-            padding: 20px; /* Reduced padding to make page shorter */
+            padding: 20px;
         }
         .container {
             max-width: 900px;
             margin: 0 auto;
             background-color: #fff;
-            padding: 20px; /* Reduced padding to make page shorter */
+            padding: 20px;
             border-radius: 15px;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
         }
@@ -30,8 +30,8 @@
         .qr-section {
             flex: 1;
             min-width: 250px;
-            margin: 10px 0; /* Reduced margin to make page shorter */
-            padding: 15px; /* Reduced padding to make page shorter */
+            margin: 10px 0;
+            padding: 15px;
             background-color: #fafafa;
             border-radius: 10px;
             transition: transform 0.3s ease;
@@ -39,26 +39,44 @@
         .qr-section:hover {
             transform: scale(1.02);
         }
-        .qr-section h2 {
-            font-size: 20px; /* Reduced font size to save space */
+        .qr-section h2 a {
+            font-size: 20px;
             color: #333;
-            margin-bottom: 10px; /* Reduced margin to save space */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        .qr-section h2 a:hover {
+            color: #007bff;
         }
         .qr-section img {
             max-width: 100%;
             height: auto;
-            margin: 5px 0; /* Reduced margin to save space */
+            margin: 5px 0;
             border-radius: 10px;
         }
         .qr-section p {
             color: #777;
-            font-size: 12px; /* Reduced font size to save space */
-            margin-top: 5px; /* Reduced margin to save space */
+            font-size: 12px;
+            margin-top: 5px;
+        }
+        .qr-section .review-button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 12px;
+            transition: background-color 0.3s ease;
+        }
+        .qr-section .review-button:hover {
+            background-color: #0056b3;
         }
         .footer {
-            margin-top: 15px; /* Reduced margin to save space */
+            margin-top: 15px;
             color: #555;
-            font-size: 12px; /* Reduced font size to save space */
+            font-size: 12px;
             font-style: italic;
         }
         @media (max-width: 600px) {
@@ -66,8 +84,8 @@
                 flex-direction: column;
                 align-items: center;
             }
-            .qr-section h2 {
-                font-size: 18px; /* Adjusted for mobile */
+            .qr-section h2 a {
+                font-size: 18px;
             }
         }
     </style>
@@ -76,15 +94,21 @@
     <div class="container">
         <div class="qr-container">
             <div class="qr-section">
-                <h2>Review Us on Google</h2>
-                <img src="google_review_qr.jpg" alt="Google Review QR Code">
+                <h2><a href="https://search.google.com/local/writereview?placeid=ChIJP-YyusWx-DkRhlxN9UuB6yo" target="_blank">Review Us on Google</a></h2>
+                <a href="https://search.google.com/local/writereview?placeid=ChIJP-YyusWx-DkRhlxN9UuB6yo" target="_blank">
+                    <img src="google_review_qr.jpg" alt="Google Review QR Code">
+                </a>
                 <p>1. Scan the QR Code. 2. Leave a review. 3. That’s it!</p>
+                <a href="https://search.google.com/local/writereview?placeid=ChIJP-YyusWx-DkRhlxN9UuB6yo" target="_blank" class="review-button">Leave Review</a>
             </div>
 
             <div class="qr-section">
-                <h2>Review Us on Justdial</h2>
-                <img src="justdial_review_qr.png" alt="Justdial Review QR Code">
+                <h2><a href="https://jsdl.in/DT-996LHDV3RQW_LBQR" target="_blank">Review Us on Justdial</a></h2>
+                <a href="https://jsdl.in/DT-996LHDV3RQW_LBQR" target="_blank">
+                    <img src="justdial_review_qr.png" alt="Justdial Review QR Code">
+                </a>
                 <p>Scan the QR Code to leave us a review on Justdial.</p>
+                <a href="https://jsdl.in/DT-996LHDV3RQW_LBQR" target="_blank" class="review-button">Leave Review</a>
             </div>
         </div>
 
