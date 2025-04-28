@@ -3,119 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leave Us a Review</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(135deg, #f4f4f4, #e0e0e0);
-            text-align: center;
-            margin: 0;
-            padding: 20px;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-        }
-        .qr-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        .qr-section {
-            flex: 1;
-            min-width: 250px;
-            margin: 10px 0;
-            padding: 15px;
-            background-color: #fafafa;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        .qr-section:hover {
-            transform: scale(1.02);
-        }
-        .qr-section h2 a {
-            font-size: 20px;
-            color: #333;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        .qr-section h2 a:hover {
-            color: #007bff;
-        }
-        .qr-section img {
-            max-width: 100%;
-            height: auto;
-            margin: 5px 0;
-            border-radius: 10px;
-        }
-        .qr-section p {
-            color: #777;
-            font-size: 12px;
-            margin-top: 5px;
-        }
-        .qr-section .review-button {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 16px;
-            background-color: #007bff;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 12px;
-            transition: background-color 0.3s ease;
-        }
-        .qr-section .review-button:hover {
-            background-color: #0056b3;
-        }
-        .footer {
-            margin-top: 15px;
-            color: #555;
-            font-size: 12px;
-            font-style: italic;
-        }
-        @media (max-width: 600px) {
-            .qr-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .qr-section h2 a {
-                font-size: 18px;
-            }
-        }
-    </style>
+    <title>Leave Us a Review | Learn Computer Academy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="qr-container">
-            <div class="qr-section">
-                <h2><a href="https://search.google.com/local/writereview?placeid=ChIJP-YyusWx-DkRhlxN9UuB6yo" target="_blank">Review Us on Google</a></h2>
-                <a href="https://search.google.com/local/writereview?placeid=ChIJP-YyusWx-DkRhlxN9UuB6yo" target="_blank">
-                    <img src="google_review_qr.jpg" alt="Google Review QR Code">
+        <header>
+            <h1>We Value Your Feedback</h1>
+            <p>Help us improve our services by sharing your experience</p>
+        </header>
+
+        <div class="review-cards">
+            <!-- Google Review Card -->
+            <div class="review-card google">
+                <div class="platform-header">
+                    <div class="platform-logo">
+                        <iconify-icon icon="logos:google" width="32" height="32"></iconify-icon>
+                    </div>
+                    <h2>Google</h2>
+                </div>
+                <div class="stars">
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                </div>
+                <div class="qr-container">
+                    <img src="google_review_qr.jpg" alt="Google Review QR Code" class="qr-code">
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Scan the QR Code</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Leave a review</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>That's it!</p>
+                    </div>
+                </div>
+                <a href="https://search.google.com/local/writereview?placeid=ChIJP-YyusWx-DkRhlxN9UuB6yo" target="_blank" class="review-button">
+                    <iconify-icon icon="material-symbols:rate-review" width="20" height="20"></iconify-icon>
+                    <span>Write a Review</span>
                 </a>
-                <p>1. Scan the QR Code. 2. Leave a review. 3. That’s it!</p>
-                <a href="https://search.google.com/local/writereview?placeid=ChIJP-YyusWx-DkRhlxN9UuB6yo" target="_blank" class="review-button">Leave Review</a>
             </div>
 
-            <div class="qr-section">
-                <h2><a href="https://jsdl.in/DT-996LHDV3RQW_LBQR" target="_blank">Review Us on Justdial</a></h2>
-                <a href="https://jsdl.in/DT-996LHDV3RQW_LBQR" target="_blank">
-                    <img src="justdial_review_qr.png" alt="Justdial Review QR Code">
+            <!-- Justdial Review Card -->
+            <div class="review-card justdial">
+                <div class="platform-header">
+                    <div class="platform-logo">
+                        <iconify-icon icon="simple-icons:justdial" width="32" height="32"></iconify-icon>
+                    </div>
+                    <h2>Justdial</h2>
+                </div>
+                <div class="stars">
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                    <iconify-icon icon="material-symbols:star" class="star" width="24" height="24"></iconify-icon>
+                </div>
+                <div class="qr-container">
+                    <img src="justdial_review_qr.png" alt="Justdial Review QR Code" class="qr-code">
+                </div>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <p>Scan the QR Code</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <p>Leave a review</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <p>That's it!</p>
+                    </div>
+                </div>
+                <a href="https://jsdl.in/DT-996LHDV3RQW_LBQR" target="_blank" class="review-button">
+                    <iconify-icon icon="material-symbols:rate-review" width="20" height="20"></iconify-icon>
+                    <span>Write a Review</span>
                 </a>
-                <p>Scan the QR Code to leave us a review on Justdial.</p>
-                <a href="https://jsdl.in/DT-996LHDV3RQW_LBQR" target="_blank" class="review-button">Leave Review</a>
             </div>
         </div>
-        <div style="display:flex; justify-content:center; gap: 10px; flex-wrap:wrap">
-            <a href="https://www.learnpick.in/training-center/12123747/learn-computer-academy" target="_blank" class="review-button">Learnpick.in</a>
-            <a href="https://www.urbanpro.com/habra/learn-computer-academy-habra/51917771" target="_blank" class="review-button">Urban Pro</a>
+
+        <div class="additional-platforms">
+            <h3>Also find us on</h3>
+            <div class="additional-buttons">
+                <a href="https://www.learnpick.in/training-center/12123747/learn-computer-academy" target="_blank" class="platform-button learnpick">
+                    <iconify-icon icon="mdi:book-education" width="20" height="20"></iconify-icon>
+                    <span>Learnpick.in</span>
+                </a>
+                <a href="https://www.urbanpro.com/habra/learn-computer-academy-habra/51917771" target="_blank" class="platform-button urbanpro">
+                    <iconify-icon icon="mdi:city" width="20" height="20"></iconify-icon>
+                    <span>Urban Pro</span>
+                </a>
+            </div>
         </div>
-        <p class="footer">We truly appreciate your time and feedback!</p>
+
+        <footer>
+            <p>We truly appreciate your time and feedback!</p>
+            <p class="academy-name">Learn Computer Academy</p>
+        </footer>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
